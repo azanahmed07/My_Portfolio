@@ -14,7 +14,7 @@ const data = [
     id: 1,
     title: "Static Interactive Resume",
     desc: "A visually appealing static resume with interactive elements like hover effects, created using HTML and CSS. Perfect for showcasing personal and professional details.",
-    img: "/project-2.jpg",
+    img: "/project-2.png",
     tags: ["HTML", "CSS", "Responsive Design"]
   },
   {
