@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        color: #f0f0f0; /* Slightly lighter white for a softer look */
+        background-color: #121212; /* Deep black for a sleek modern look */
+        font-family: 'Roboto', sans-serif; /* A clean modern font */
+        line-height: 1.5;
+    }
+}
+
+@layer components {
+    .menuLink {
+        @apply cursor-pointer text-white transition-colors duration-300 ease-in-out;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .menuLink:hover {
+        color: #a8a8a8; /* Softer hover color for text */
+    }
+
+    .menuLink::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #c5c5c5;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .menuLink:hover::after {
+        width: 100%;
+    }
+
+    .tags {
+        @apply inline-block text-sm text-white py-1 px-4 rounded-full transition-transform transform hover:scale-105 duration-200 ease-in-out;
+        background-color: #1abc9c; /* Vibrant teal for primary tag */
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .tags:last-child {
+        margin-right: 0;
+    }
+
+    .tags:nth-last-child(2) {
+        background-color: #3498db; /* Soft blue for secondary tag */
+    }
+
+    .tags:nth-last-child(3) {
+        background-color: #f39c12; /* Bright orange for third-to-last tag */
+    }
+
+    .tags:nth-last-child(4) {
+        background-color: #e74c3c; /* Vibrant red for fourth-to-last tag */
+    }
+
+    .tags:hover {
+        filter: brightness(1.1); /* Slight brightness increase on hover */
+        transform: scale(1.1); /* More pronounced hover scaling */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    }
+}
