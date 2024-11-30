@@ -15,10 +15,12 @@ function Contact() {
 
           {/* Email and Phone */}
           <div className="space-y-4">
-            <div className="flex gap-3 items-center text-xl text-700" data-aos="zoom-in-up">
-<MdMail size={35}/>           
+          <div className="flex gap-3 items-center text-xl text-700" data-aos="zoom-in-up">
+             
+              <MdMail size={35} />
               <span className="text-500">aazan7391@gmail.com</span>
             </div>
+            
  
             <div className="flex gap-3 items-center text-xl text-700"  data-aos="zoom-in-up">
               <BsFillTelephoneForwardFill size={35}/>
